@@ -1,5 +1,7 @@
 #lang racket
 
+(provide my-memo)
+
 (define (fact-shit n)
   (if (= 0 n) 1
       (* n (fact (- n 1)))))
