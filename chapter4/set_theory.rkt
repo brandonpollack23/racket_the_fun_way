@@ -52,3 +52,5 @@
   (circle CIRCLE-OFF 0 30 b3)
   (piscis CIRCLE-OFF 0 30 b2)
   (print venn))
+
+;; Continue from p 101
