@@ -53,4 +53,15 @@
   (piscis CIRCLE-OFF 0 30 b2)
   (print venn))
 
-;; Continue from p 101
+;; Illustrate with sets
+
+(define A (set 2 4 6 8 10 12 14 16 18))
+(define B (set 3 6 9 12 15 18))
+
+(define ab-union (set-union A B))
+
+; cartesian-product
+(define (cart-prod A B)
+  (list->set
+   (for*/list ([a A]
+               [b B]) (list a b))))
